@@ -1,0 +1,25 @@
+<div class="row">
+    <h2>Cadastro de Aluno</h2>
+    <p>Crie um componente com um formulário e os campos: RA, nome, email, celular. Todos os campos deverão ser obrigatórios e associados a um ngModel.</p>
+</div>
+<div class="row">        
+    <div class="mb-3">
+        <label  for="exampleFormControlInput1" class="form-label">RA</label>
+        <input style="width: 18%;" type="number" name="ra" class="form-control" [(ngModel)]="ra" placeholder="Digite seu ra" required>
+      </div>
+      <div class="mb-3">
+        <label  for="exampleFormControlInput1" class="form-label">Nome</label>
+        <input style="width: 30%;" type="text" name="nome" class="form-control"  [(ngModel)]="nome" placeholder="Digite seu nome" required>
+      </div>
+    <div class="mb-3">
+        <label  for="exampleFormControlInput1" class="form-label">Email</label>
+        <input style="width: 30%;" type="email" name="email" class="form-control"  [(ngModel)]="email" placeholder="exemplo@email.com" required>
+      </div>
+      <div class="mb-3">
+        <label  for="exampleFormControlInput1" class="form-label">Celular</label>
+        <input style="width: 30%;" type="number" name="celular" class="form-control"  [(ngModel)]="celular" placeholder="xx xxxxx xxxx" required>
+      </div>
+      <div>
+        <button class="btn btn-primary" type="submit">Salvar</button>
+    </div>
+</div>

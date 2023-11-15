@@ -1,0 +1,60 @@
+<div class="row">
+    <h2>Calcular Média</h2>
+    <p>Crie uma componente que receberá as notas: AC1, AC2, AG e AF.
+        Calcule a média ao clicar no botão “Calcular” e mostre se está aprovado ou reprovado, a média é 5.</p>
+        <p>Média Final = (AC1 * 0,15) + (AC2 *0,30) + (AG * 0,10) + (AF * 0,45)</p>
+</div>
+<div class="row">
+    <div class="col-md-2">
+    <div>
+    <label>AC1</label>
+    <div>
+        <input [(ngModel)]="ac1" type="number" class="form-control" >
+      </div>
+    </div>
+</div>
+<div class="col-md-2">
+    <div>
+    <label>AC2</label>
+    <div>
+        <input [(ngModel)]="ac2" type="number" class="form-control" >
+      </div>
+    </div>
+</div>
+<div class="col-md-2">
+    <div>
+    <label>AG</label>
+    <div>
+        <input [(ngModel)]="ag" type="number" class="form-control" >
+      </div>
+    </div>
+</div>
+<div class="col-md-2">
+    <div>
+    <label>AF</label>
+    <div>
+        <input [(ngModel)]="af" type="number" class="form-control" >
+      </div>
+    </div>
+</div>
+<div class="col-md-4">
+
+    <button (click)="media()" class="btn btn-info" style="margin-top: 24px;">Calcular Media</button>
+    </div>
+</div>
+<div class="col-md-2">
+    <div>
+    <label>Media Final</label>
+    <div>
+        <input [(ngModel)]="resultado" type="number" class="form-control">
+      </div>
+    </div>
+</div>
+<div class="col-md-2">
+    <div>
+    <label>Situação</label>
+    <div>
+        <input [(ngModel)]="situacao" type="text" class="form-control">
+      </div>
+    </div>
+</div>
